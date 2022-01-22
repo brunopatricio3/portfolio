@@ -1,0 +1,47 @@
+@import "structure";
+
+$breakpoint-desktop: 1023px;
+$breakpoint-tablet: 767px;
+$breakpoint-mobile: 449px;
+
+html, body{
+  height: 100%;
+  font-size: 14px;
+  margin: 0;
+  background-color: #fff;
+}
+
+.appWrapper{
+  display: flex;
+  justify-content: center;    
+}
+
+.mainWrapper {
+  display: flex;
+  height: 100%;
+  width: 100rem;
+  background-color: #91a1b1;
+  // text-align: center;
+  min-height: 50rem;
+  flex-direction: column;
+  margin: 2rem;
+  border-radius: 2rem;
+}
+
+.nav{
+  height: 3rem;
+  text-align: end;
+  align-items: center; 
+}
+
+.nav-item{
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+
+  &:hover{
+    color: white;
+    cursor: pointer;
+    transform: scale(1.5);
+  }
+}
