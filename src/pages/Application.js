@@ -7,8 +7,8 @@ function Application() {
   const [selectedPage, setSelectedPage] = useState("Home");
 
   return (
-    <div className="appWrapper">
-      <div className="mainWrapper">
+    <div className="app-wrapper">
+      <div className="main-wrapper">
           <Home /> 
       </div>
     </div>
