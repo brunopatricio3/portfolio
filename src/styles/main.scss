@@ -15,6 +15,7 @@ html, body{
 .app-wrapper{
   display: flex;
   justify-content: center;    
+  align-items: center;    
   color: $cl-main-text;
 }
 
@@ -23,7 +24,6 @@ html, body{
   height: 100%;
   width: 70rem;
   background-color: $cl-main-wrapper;
-  min-height: 100rem;
   flex-direction: column;
   margin: 2rem;
   padding: 2rem;
@@ -56,8 +56,8 @@ html, body{
     
     img{
       border-radius: 2rem;
-      width: 200px;
-      height: 200px;
+      width: 150px;
+      height: 0px;
     }
   }
 }
@@ -90,4 +90,64 @@ html, body{
       color: white;
     }
   }
+}
+
+.isPressable{
+  cursor: pointer;
+
+  &:hover{
+    .txt-cl-prog-green{
+      transition: 0.5s ease-in-out;
+      border-bottom: 1px solid $cl-prog-green;
+    }
+  }
+
+}
+
+.transition{
+  transition: 0.5s ease-in-out;
+}
+
+.text-sz-xs{
+  font-size: 12px;
+}
+
+.text-sz-sm{
+  font-size: 14px;
+}
+
+.text-sz-md{
+  font-size: 16px;
+}
+
+.text-sz-lg{
+  font-size: 18px;
+}
+
+.text-sz-xl{
+  font-size: 20px;
+}
+
+.txt-cl-orange{
+  color: $orange-high
+}
+
+.txt-cl-prog-grey{
+  color: $cl-prog-grey;
+}
+
+.txt-cl-prog-green{
+  color: $cl-prog-green;
+}
+
+.txt-cl-prog-white{
+  color: $cl-prog-white;
+}
+
+.txt-cl-prog-blue{
+  color: $cl-prog-blue;
+}
+
+.txt-cl-prog-brown{
+  color: $cl-prog-brown;
 }

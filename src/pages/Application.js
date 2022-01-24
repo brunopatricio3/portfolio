@@ -9,7 +9,7 @@ function Application() {
   return (
     <div className="app-wrapper">
       <div className="main-wrapper">
-          <Home /> 
+          <Home who="Bruno"/> 
       </div>
     </div>
   );
