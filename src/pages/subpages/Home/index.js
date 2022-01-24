@@ -55,9 +55,35 @@ function Home() {
       </div>
 
       <div className="container projects margin-bottom-m">
-        <div className="row">
+        <div className="projects-title row">
           <div class="col-sm profile-description">
             <h2>Projects</h2>
+          </div>
+        </div>
+        <div className="projects-list row">
+          <div class="col-4 project-outside-wrapper margin-bottom-m">
+            <div class="project-wrapper">
+              <h4>Project 1</h4>
+              <p>asd asd asd asd asd asd asd asd asd asd asd asd asd asd </p>
+            </div>
+          </div>
+          <div class="col-4 project-outside-wrapper margin-bottom-m">
+            <div class="project-wrapper">
+              <h4>Project 2</h4>
+              <p>asd asd asd asd asd asd asd asd asd asd asd asd asd asd </p>
+            </div>
+          </div>
+          <div class="col-4 project-outside-wrapper margin-bottom-m">
+            <div class="project-wrapper">
+              <h4>Project 3</h4>
+              <p>asd asd asd asd asd asd asd asd asd asd asd asd asd asd </p>
+            </div>
+          </div>
+          <div class="col-4 project-outside-wrapper margin-bottom-m">
+            <div class="project-wrapper">
+              <h4>Project 4</h4>
+              <p>asd asd asd asd asd asd asd asd asd asd asd asd asd asd </p>
+            </div>
           </div>
         </div>
       </div>
