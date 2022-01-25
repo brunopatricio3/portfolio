@@ -17,11 +17,11 @@ html, body{
   justify-content: center;    
   align-items: center;    
   color: $cl-main-text;
+  height: 100vh;
 }
 
 .main-wrapper {
   display: flex;
-  height: 100%;
   width: 70rem;
   background-color: $cl-main-wrapper;
   flex-direction: column;
@@ -101,7 +101,6 @@ html, body{
       border-bottom: 1px solid $cl-prog-green;
     }
   }
-
 }
 
 .transition{
