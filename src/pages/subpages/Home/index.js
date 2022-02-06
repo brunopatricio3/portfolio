@@ -19,6 +19,12 @@ function Home() {
           </div>
         </div>
       </div>    
+      <div className="section-a">
+        <h1 className="text-sz-xxl">section 2</h1>
+      </div>   
+      <div className="section-b">
+        <h1 className="text-sz-xxl">section 3</h1>
+      </div>   
     </>
   );
 }
