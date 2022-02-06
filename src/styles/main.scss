@@ -22,85 +22,18 @@ html, body{
 
 .main-wrapper {
   display: flex;
-  width: 70rem;
-  background-color: $cl-main-wrapper;
-  flex-direction: column;
-  margin: 2rem;
-  padding: 2rem;
-  border-radius: 2rem;
+  height: 100vh;
+  width: 100vw
 }
 
-.nav{
-  height: 3rem;
-  text-align: end;
-  align-items: center; 
-  
-  .nav-item{
-    color: $cl-main-text;;
-    font-weight: bold;
-    transition: 0.3s;
-  
-    &:hover{
-      color: $cl-primary;
-      cursor: pointer;
-      transform: scale(1.5);
-    }
-  }
+.bg-video{
+  width: 100%;
+  object-fit: fill;
+  opacity: .5;
 }
 
-.profile{
-  border-radius: 2rem;
-  
-  .profile-picture{
-    align-self: center;
-    
-    img{
-      border-radius: 2rem;
-      width: 150px;
-      height: 0px;
-    }
-  }
-}
-
-.technologies{
-  border-radius: 2rem;
-  
-  button{
-    margin: 1rem;
-    transition: 0.3s ease-out;
-
-    &:hover{
-      transform: translate(0,-5px);
-    }
-  }
-}
-
-.projects{
-  border-radius: 2rem;
-  
- .project-wrapper{
-    background-color: grey;
-    padding: 1rem;
-    transition: 0.5s ease-out;
-    border-radius: 2rem;
-
-    &:hover{
-      background-color: $cl-primary;
-      cursor: pointer;
-      color: white;
-    }
-  }
-}
-
-.isPressable{
-  cursor: pointer;
-
-  &:hover{
-    .txt-cl-prog-green{
-      transition: 0.5s ease-in-out;
-      border-bottom: 1px solid $cl-prog-green;
-    }
-  }
+.main-title{
+  color: $cl-main-text;
 }
 
 .transition{
@@ -124,7 +57,11 @@ html, body{
 }
 
 .text-sz-xl{
-  font-size: 20px;
+  font-size: 24px;
+}
+
+.text-sz-xxl{
+  font-size: 32px;
 }
 
 .txt-cl-orange{
