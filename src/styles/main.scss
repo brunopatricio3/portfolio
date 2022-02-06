@@ -13,7 +13,6 @@ html, body{
 }
 
 .app-wrapper{
-  display: flex;
   justify-content: center;    
   align-items: center;    
   color: $cl-main-text;
@@ -49,6 +48,24 @@ html, body{
     height: 100%;
     vertical-align: middle;
   }
+}
+
+.section-a {
+  display: flex;
+  background-color: red;
+  justify-content: center;    
+  align-items: center;  
+  height: 100vh;
+  width: 100vw;
+}
+
+.section-b {
+  display: flex;
+  background-color: purplez;
+  justify-content: center;    
+  align-items: center;  
+  height: 100vh;
+  width: 100vw;
 }
 
 
