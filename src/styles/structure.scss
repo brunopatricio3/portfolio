@@ -1,3 +1,6 @@
+@import "colors";
+
+//Margins and Paddings
 .margin-bottom-sm{
   margin-bottom: 1rem;
 }
@@ -14,16 +17,56 @@
   margin: 0 1rem;
 }
 
+
+//Text
 .text-center{
   text-align: center;
 }
 
-// .fixed-menu {
-//   width: 30px;
-//   height: 30px;
-//   background-color: orange;
-//   position: sticky;
-//   top: 50%;
-//   left: 75%;
-//   transform: translate(-50%, -50%);
-// }
+.text-sz-xs{
+  font-size: 12px;
+}
+
+.text-sz-sm{
+  font-size: 14px;
+}
+
+.text-sz-md{
+  font-size: 16px;
+}
+
+.text-sz-lg{
+  font-size: 18px;
+}
+
+.text-sz-xl{
+  font-size: 24px;
+}
+
+.text-sz-xxl{
+  font-size: 36px;
+}
+
+.txt-cl-orange{
+  color: $orange-high
+}
+
+.txt-cl-prog-grey{
+  color: $cl-prog-grey;
+}
+
+.txt-cl-prog-green{
+  color: $cl-prog-green;
+}
+
+.txt-cl-prog-white{
+  color: $cl-prog-white;
+}
+
+.txt-cl-prog-blue{
+  color: $cl-prog-blue;
+}
+
+.txt-cl-prog-brown{
+  color: $cl-prog-brown;
+}

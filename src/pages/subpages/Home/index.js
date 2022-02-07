@@ -1,31 +1,22 @@
 import React, { useState } from 'react';
 import '../../../styles/main.scss';
-import AnimatedBackground from "../../../assets/videos/animated-background.mp4"
+import ReactPageScroller from 'react-page-scroller';
+import SectionWelcome from './SectionWelcome';
+import SectionAbout from './SectionAbout';
+import SectionTechnologies from './SectionTechnologies';
 
 function Home() {
 
-  const [expandProfile, setExpandProfile] = useState(false);
-
   return (
-    <>     
-      <div className="section-welcome">
-        <video className="bg-video" autoPlay loop muted>
-            <source src={AnimatedBackground} type='video/mp4' />
-        </video>
-        <div className="bg-video-container">
-          <div className="bg-video-text-container">
-            <h1 className="text-sz-xxl">@Bruno_Patrício</h1>
-            <p className="text-sz-xl">Front-End Developer</p>
-          </div>
-        </div>
-      </div>    
-      <div className="section-a">
-        <h1 className="text-sz-xxl">section 2</h1>
-      </div>   
-      <div className="section-b">
-        <h1 className="text-sz-xxl">section 3</h1>
-      </div>   
-    </>
+    <ReactPageScroller
+      // pageOnChange={this.handlePageChange}
+      // onBeforePageScroll={this.handleBeforePageChange}
+      // customPageNumber={this.state.currentPage}
+    >     
+      <SectionWelcome />  
+      <SectionAbout />  
+      <SectionTechnologies />  
+    </ReactPageScroller>
   );
 }
 

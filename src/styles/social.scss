@@ -1,0 +1,15 @@
+.social-wrapper{
+    display: inline-block;
+    margin: 20px;
+    transition: 0.5s;
+
+    :hover{
+        cursor: pointer;
+        color: purple;
+    }
+}
+
+.social-icon{
+    font-size: 48px;
+
+}
