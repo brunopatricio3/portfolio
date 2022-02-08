@@ -1,15 +1,15 @@
 .social-wrapper{
     display: inline-block;
-    margin: 20px;
-    transition: 0.5s;
+    margin: 15px;
 
     :hover{
         cursor: pointer;
-        color: purple;
+        color: rgb(179, 15, 179);
+        transform: scale(2);
     }
 }
 
 .social-icon{
     font-size: 48px;
-
+    transition: all .6s ease;
 }
