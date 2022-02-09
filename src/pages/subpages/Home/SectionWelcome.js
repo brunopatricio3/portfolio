@@ -3,7 +3,7 @@ import '../../../styles/main.scss';
 import AnimatedBackground from "../../../assets/videos/animated-background.mp4"
 import SocialIcon from '../../components/SocialIcon';
 
-function SectionWelcome() {
+function SectionWelcome(props) {
 
   return (
       <div className="section-welcome">
@@ -22,10 +22,12 @@ function SectionWelcome() {
             <span className='txt-cl-prog-grey'>&#62;</span>
           </h1>
             
-            <SocialIcon icon={"devicon-github-original"} link="github" />
-            <SocialIcon icon={"devicon-linkedin-plain"} link="linkedin" />
+          <SocialIcon icon={"devicon-github-original"} link="github" />
+          <SocialIcon icon={"devicon-linkedin-plain"} link="linkedin" />
 
-            {/* <p className="text-sz-xl">Front-End Developer</p> */}
+          <div className="pagination-wrapper">
+            {props.pagination}
+          </div>
           </div>
         </div>
       </div>    
