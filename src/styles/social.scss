@@ -1,7 +1,17 @@
 .social-wrapper{
     display: inline-block;
     margin: 15px;
-
+    animation: fadein 3s;
+    transition-delay: 1000ms;
+    
+    @keyframes fadein {
+      from {
+          opacity:0;
+      }
+      to {
+          opacity:1;
+      }
+    }
     :hover{
         cursor: pointer;
         color: rgb(179, 15, 179);

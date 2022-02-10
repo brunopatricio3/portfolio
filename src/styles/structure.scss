@@ -44,11 +44,15 @@
 }
 
 .text-sz-xxl{
-  font-size: 36px;
+  font-size: 34px;
+
+  @media screen and (max-width: 720px){
+    font-size: 20px;
+  }
 }
 
-.txt-cl-orange{
-  color: $orange-high
+.txt-cl-primary{
+  color: $purple-high
 }
 
 .txt-cl-prog-grey{

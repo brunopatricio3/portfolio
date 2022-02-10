@@ -12,7 +12,7 @@ function SectionWelcome(props) {
         </video>
         <div className="bg-video-container">
           <div className="bg-video-text-container">
-          <h1 className="text-sz-xxl">
+          <h1 className="title text-sz-xxl">
             <span className='txt-cl-prog-grey'>&#60;</span>
             <span className='txt-cl-prog-green'>BrunoPatricio</span> 
             <span className='txt-cl-prog-blue'> role</span>

@@ -5,7 +5,7 @@ function Pagination(props) {
 
   return (
       <div className="pagination margin-bottom-sm" onClick={() => props.onSelect()}>
-        {/* <p className="text-sz-xxl">{props.pageName}</p> */}
+        {/* <p className="text-sz-xxl page">{props.pageName}</p> */}
       </div>
   );
 }

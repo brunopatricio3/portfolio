@@ -25,6 +25,18 @@ html, body{
   height: 100vh;
   width: 100vw;
 
+  .title{
+    animation: fadein 3s;
+    @keyframes fadein {
+      from {
+          opacity:0;
+      }
+      to {
+          opacity:1;
+      }
+    }
+  }
+
   .bg-video{
     position:relative;
     z-index:0;
@@ -58,6 +70,16 @@ html, body{
   height: 100vh;
   width: 100vw;
   padding: 2rem;
+
+  .main-title{
+    color: $cl-main-text;
+    font-family: 'Sanchez', serif;
+  }
+  
+  .main-text{
+    color: $cl-main-text;
+    font-family: 'Sanchez', serif;
+  }
 }
 
 .section-projects {
@@ -71,6 +93,12 @@ html, body{
 
 .main-title{
   color: $cl-main-text;
+  font-family: 'Sanchez', serif;
+}
+
+.main-text{
+  color: $cl-main-text;
+  font-family: 'Sanchez', serif;
 }
 
 .transition{
@@ -88,8 +116,18 @@ html, body{
   :hover{
     cursor: pointer;
     background: purple;
-    transform:rotate(225deg);
+    transform:rotate(-135deg);
+
+    .page{
+      color: white;
+      opacity: 1;
+    }
   }  
+
+  .page{
+    color: red;
+    opacity: 0;
+  }
 }
 
 .pagination{
@@ -105,5 +143,5 @@ html, body{
 }
 
 .container{
-  margin-top: 7rem;
+  // margin-top: 7rem;
 }
