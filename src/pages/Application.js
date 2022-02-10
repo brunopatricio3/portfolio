@@ -3,11 +3,10 @@ import Home from './subpages/Home'
 import '../styles/main.scss';
 
 function Application() {
-  const [selectedPage, setSelectedPage] = useState("Home");
 
   return (
-    <div className="app-wrapper">
-          <Home /> 
+		<div className="app-wrapper">
+			<Home /> 
     </div>
   );
 }

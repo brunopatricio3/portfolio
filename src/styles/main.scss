@@ -12,6 +12,10 @@ html, body{
   background-color: $cl-html!important;
 }
 
+h1,h2,h3,h4,h5,h6,p,span{
+  font-family: 'Sanchez', serif;
+}
+
 .app-wrapper{
   justify-content: center;    
   align-items: center;    
@@ -29,10 +33,10 @@ html, body{
     animation: fadein 3s;
     @keyframes fadein {
       from {
-          opacity:0;
+        opacity:0;
       }
       to {
-          opacity:1;
+        opacity:1;
       }
     }
   }
@@ -63,32 +67,33 @@ html, body{
 }
 
 .section-about {
-  display: flex;
+  // display: flex;
   background-color: $black-high;
   // justify-content: center;    
-  // align-items: center;  
-  height: 100vh;
-  width: 100vw;
-  padding: 2rem;
+  // // align-items: center;  
+  // height: 100vh;
+  // width: 100vw;
+  // padding: 2rem;
+  padding-top: 6rem;
 
   .main-title{
     color: $cl-main-text;
-    font-family: 'Sanchez', serif;
+    
   }
   
   .main-text{
     color: $cl-main-text;
-    font-family: 'Sanchez', serif;
   }
 }
 
-.section-projects {
-  display: flex;
+.section-technologies {
+  // display: flex;
   background-color:$black-medium;
   // justify-content: center;    
   // align-items: center;  
   height: 100vh;
   width: 100vw;
+  padding-top: 6rem;
 }
 
 .main-title{
@@ -132,9 +137,7 @@ html, body{
 
 .pagination{
   background: #000;
-  border-width: 2px;
-  border-style: solid;
-  border-color: rebeccapurple;
+  border: 2px solid rebeccapurple;
   height: 20px;
   width:20px;
   text-align: center;
@@ -144,4 +147,8 @@ html, body{
 
 .container{
   // margin-top: 7rem;
+}
+
+.technology-icon{
+  font-size: 36px;
 }

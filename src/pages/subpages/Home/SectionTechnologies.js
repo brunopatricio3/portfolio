@@ -1,34 +1,54 @@
 import React from 'react';
 import '../../../styles/main.scss';
+import TechIcon from '../../components/TechIcon';
+import Project from '../../components/Project';
+import projectsList from '../../../assets/copy/projects.json';
+
 
 function SectionTechnologies(props) {
 
+  function toggleFilter(tech){
+    alert(tech)
+  }
+
   return (
-    <div class="container">
-      <div class="row margin-bottom-md">
-        <div class="col-sm">
-          <h2>
-            Projects
-          </h2>
+    <div className="section-technologies">
+      <div className=" container">
+        <div className="row margin-bottom-md">
+          <div className="col-sm">
+            <h2>
+              Projects
+            </h2>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-sm">
-          <p>
-            Section 1
-          </p>
+        <div className="row">
+          <div className="col-sm text-center margin-bottom-md">
+            <div>
+              <TechIcon icon={"devicon-bootstrap-plain"} tech="bootstap" toggleFilter={toggleFilter} />
+              <TechIcon icon={"devicon-css3-plain"} tech="css" toggleFilter={toggleFilter} />
+              <TechIcon icon={"devicon-html5-plain"} tech="html" toggleFilter={toggleFilter} />
+              <TechIcon icon={"devicon-javascript-plain"} tech="javascript" toggleFilter={toggleFilter} />
+              <TechIcon icon={"devicon-jquery-plain"} tech="jquery" toggleFilter={toggleFilter} />
+              <TechIcon icon={"devicon-react-original"} tech="react" toggleFilter={toggleFilter}/>
+              <TechIcon icon={"devicon-sass-original"} tech="sass" toggleFilter={toggleFilter}/>
+              <TechIcon icon={"devicon-sourcetree-original"} tech="sourcetree" toggleFilter={toggleFilter}/>
+              <TechIcon icon={"devicon-typescript-plain"} tech="typescript" toggleFilter={toggleFilter} />
+            </div>
+          </div>
         </div>
-        <div class="col-sm">
-          <p>
-            Section 2
-          </p>
+        <div className="row">
+          {projectsList.map( (p) => (
+            <Project 
+              key={p.projectName} 
+              projectName={p.projectName} 
+              projectDuration={p.projectDuration}
+              projectTechnologies={p.projectTechnologies}
+              />
+            )
+          )}
+         
         </div>
-        <div class="col-sm">
-          <p>
-            Section 3
-          </p>
-        </div>
-      </div>
+      </div>  
     </div>  
   );
 }

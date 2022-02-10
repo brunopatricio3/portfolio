@@ -1,0 +1,12 @@
+[
+	{
+		"projectName": "Project 1",
+		"projectDuration": "Apr 2018 - Oct 2018",
+		"projectTechnologies": ["react", "css"]
+	},
+	{
+		"projectName": "Project 2",
+		"projectDuration": "Nov 2018 - Nov 2019",
+		"projectTechnologies": ["html", "sass", "jquery"]
+	}
+]

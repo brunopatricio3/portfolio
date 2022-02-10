@@ -1,25 +1,25 @@
 .social-wrapper{
-    display: inline-block;
-    margin: 15px;
-    animation: fadein 3s;
-    transition-delay: 1000ms;
-    
-    @keyframes fadein {
-      from {
-          opacity:0;
-      }
-      to {
-          opacity:1;
-      }
-    }
-    :hover{
-        cursor: pointer;
-        color: rgb(179, 15, 179);
-        transform: scale(2);
-    }
+	display: inline-block;
+	margin: 15px;
+	transition: all .3s ease-in-out;
+	
+	@keyframes fadein {
+		from {
+			opacity:0;
+		}
+		to {
+			opacity:1;
+		}
+	}
+}
+
+.social-wrapper:hover{
+	cursor: pointer;
+	// color: rgb(179, 15, 179);
+	transform: translateY(-6px)
 }
 
 .social-icon{
-    font-size: 48px;
-    transition: all .6s ease;
+	font-size: 48px;
+	transition: all .6s ease;
 }
