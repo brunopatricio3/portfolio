@@ -15,7 +15,7 @@ function TechIcon(props) {
 
   return (
     <div className={`tech-wrapper${props.isSmall ? "-sm" : "" }`} onClick={() => pressButton(props.tech)}> 
-      <i className={`${props.icon} tech-icon${props.isSmall ? "-sm" : "" } ${isSelected ? "project-selected" : ""}`} ></i>
+      <i className={`${props.icon} tech-icon${props.isSmall ? "-sm" : "" } ${isSelected ? "colored" : ""}`} ></i>
     </div>
   );
 }
