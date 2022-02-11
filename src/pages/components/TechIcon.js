@@ -7,9 +7,8 @@ function TechIcon(props) {
 
   function pressButton(tech){
     if(!props.isSmall) {
-      // alert("Activate Filter")
-      // props.toggleFilter(tech)
       setSelected(!isSelected);
+      props.toggleFilter(tech);
     }
   }
 

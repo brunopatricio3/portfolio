@@ -1,14 +1,27 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import '../../../styles/main.scss';
 import TechIcon from '../../components/TechIcon';
 import Project from '../../components/Project';
 import projectsList from '../../../assets/copy/projects.json';
 
-
 function SectionTechnologies(props) {
 
+  const [selectedTechList, setSelectedTechList] = useState([]);
+  const [hasUpdated, setHasUpdated] = useState(false);
+
   function toggleFilter(tech){
-    alert(tech)
+    setHasUpdated(true);
+    let tempArr = selectedTechList;
+    if(tempArr.includes(tech)){
+      tempArr.splice(tempArr.indexOf(tech), 1);
+    } else {
+      tempArr.push(tech);
+    }
+    setSelectedTechList(tempArr);
+    setTimeout(() => {
+      setHasUpdated(false);
+    }, 1);
+    
   }
 
   return (
@@ -37,16 +50,15 @@ function SectionTechnologies(props) {
           </div>
         </div>
         <div className="row">
-          {projectsList.map( (p) => (
+          {!hasUpdated && projectsList.map((proj, i) => (
             <Project 
-              key={p.projectName} 
-              projectName={p.projectName} 
-              projectDuration={p.projectDuration}
-              projectTechnologies={p.projectTechnologies}
-              />
-            )
-          )}
-         
+              key={i+"-"+ proj} 
+              projectName={proj.projectName} 
+              projectDuration={proj.projectDuration}
+              projectTechnologies={proj.projectTechnologies}
+              selectedTechList={selectedTechList}
+            />
+          ))}
         </div>
       </div>  
     </div>  

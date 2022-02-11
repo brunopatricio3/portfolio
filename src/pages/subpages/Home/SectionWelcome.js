@@ -22,8 +22,8 @@ function SectionWelcome(props) {
             <span className='txt-cl-prog-grey'>&#62;</span>
           </h1>
             
-          <SocialIcon icon={"devicon-github-original"} link="github" />
-          <SocialIcon icon={"devicon-linkedin-plain"} link="linkedin" />
+          <SocialIcon icon={"devicon-github-original"} url="https://github.com/brunopatricio3" />
+          <SocialIcon icon={"devicon-linkedin-plain"} url="https://www.linkedin.com/in/bmpatricio/" />
 
           <div className="pagination-wrapper">
             {props.pagination}
