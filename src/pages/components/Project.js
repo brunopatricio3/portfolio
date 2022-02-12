@@ -4,11 +4,6 @@ import TechIcon from "../components/TechIcon";
 
 function Project(props) {
 
-	useEffect(() => {
-    // Update the document title using the browser API
-    checkFilters();
-  }, [props.selectedTechList]);
-
 	function checkFilters(){
 		if(props.selectedTechList.length === 0 ){
 			return false;
@@ -31,11 +26,15 @@ function Project(props) {
   
 	function renderTechnology(tech, i){
 		switch(tech){
-			case "css": return <TechIcon key={i} icon={"devicon-css3-plain"} isSmall />;
-			case "html": return <TechIcon key={i} icon={"devicon-html5-plain"} isSmall />;
-			case "jquery": return <TechIcon key={i} icon={"devicon-jquery-plain"} isSmall />;
-			case "react": return <TechIcon key={i} icon={"devicon-react-original"} isSmall />;
-			case "sass": return <TechIcon key={i} icon={"devicon-sass-original"} isSmall />;
+			case "bootstrap": return <TechIcon key={i} icon={"devicon-bootstrap-plain"} tech="bootstrap" isSmall selectedTechList={props.selectedTechList} />;
+			case "css": return <TechIcon key={i} icon={"devicon-css3-plain"} tech="css" isSmall selectedTechList={props.selectedTechList} />;
+			case "html": return <TechIcon key={i} icon={"devicon-html5-plain"} tech="html" isSmall selectedTechList={props.selectedTechList} />;
+			case "javascript": return <TechIcon key={i} icon={"devicon-javascript-plain"} tech="javascript" isSmall selectedTechList={props.selectedTechList} />;
+			case "jquery": return <TechIcon key={i} icon={"devicon-jquery-plain"} tech="jquery" isSmall selectedTechList={props.selectedTechList} />;
+			case "react": return <TechIcon key={i} icon={"devicon-react-original"} tech="react" isSmall selectedTechList={props.selectedTechList} />;
+			case "sass": return <TechIcon key={i} icon={"devicon-sass-original"} tech="sass" isSmall selectedTechList={props.selectedTechList} />;
+			case "sourcetree": return <TechIcon key={i} icon={"devicon-sourcetree-original"} tech="sourcetree" isSmall selectedTechList={props.selectedTechList} />;
+			case "typescript": return <TechIcon key={i} icon={"devicon-typescript-original"} tech="typescript" isSmall selectedTechList={props.selectedTechList} />;
 			default: return;
 		}
 	}

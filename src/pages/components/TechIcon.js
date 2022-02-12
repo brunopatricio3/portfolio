@@ -1,9 +1,17 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../../styles/technologies.scss';
 
 function TechIcon(props) {
-  
+
   const [isSelected, setSelected] = useState(false);
+  
+  useEffect(() => {
+    if(props.isSmall && props.selectedTechList && props.selectedTechList.length > 0){
+      if(props.selectedTechList.includes(props.tech)){
+        setSelected(true);
+      }
+    }
+  },[isSelected])
 
   function pressButton(tech){
     if(!props.isSmall) {

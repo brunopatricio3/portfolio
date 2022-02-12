@@ -37,12 +37,10 @@
 	border-radius: 1rem;
 	background-color: $black-high;
 	transition: all .6s ease;
-
-	
 }
 
 .project-wrapper:hover{
-	cursor: pointer;
+	// cursor: pointer;
 	transform: scale(1.05);
 	// transform: scale(1.05) rotate(2deg);
 }

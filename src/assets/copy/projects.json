@@ -6,7 +6,32 @@
 	},
 	{
 		"projectName": "Project 2",
-		"projectDuration": "Nov 2018 - Nov 2019",
-		"projectTechnologies": ["css", "html", "jquery", "sass"]
+		"projectDuration": "Apr 2018 - Oct 2018",
+		"projectTechnologies": ["css", "html", "javascript", "jquery", "sourcetree"]
+	}, 
+	{
+		"projectName": "Project 3",
+		"projectDuration": "Apr 2018 - Oct 2018",
+		"projectTechnologies": ["react", "sass"]
+	}, 
+	{
+		"projectName": "Project 4",
+		"projectDuration": "Apr 2018 - Oct 2018",
+		"projectTechnologies": ["css", "html", "javascript", "jquery"]
+	}, 
+	{
+		"projectName": "Project 5",
+		"projectDuration": "Apr 2018 - Oct 2018",
+		"projectTechnologies": ["bootstrap", "react", "sass", "typescript"]
+	}, 
+	{
+		"projectName": "Project 6",
+		"projectDuration": "Apr 2018 - Oct 2018",
+		"projectTechnologies": ["bootstrap", "javascript", "react", "sass"]
+	}, 
+	{
+		"projectName": "Project Test",
+		"projectDuration": "xxx xxxx - xxx xxxx",
+		"projectTechnologies": ["bootstrap", "css", "html", "javascript", "jquery", "react", "sass", "sourcetree", "typescript"]
 	}
 ]

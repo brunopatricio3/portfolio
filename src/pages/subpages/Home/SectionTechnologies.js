@@ -18,6 +18,7 @@ function SectionTechnologies(props) {
       tempArr.push(tech);
     }
     setSelectedTechList(tempArr);
+    console.log(selectedTechList)
     setTimeout(() => {
       setHasUpdated(false);
     }, 1);
@@ -37,7 +38,7 @@ function SectionTechnologies(props) {
         <div className="row">
           <div className="col-sm text-center margin-bottom-md">
             <div>
-              <TechIcon icon={"devicon-bootstrap-plain"} tech="bootstap" toggleFilter={toggleFilter} />
+              <TechIcon icon={"devicon-bootstrap-plain"} tech="bootstrap" toggleFilter={toggleFilter} />
               <TechIcon icon={"devicon-css3-plain"} tech="css" toggleFilter={toggleFilter} />
               <TechIcon icon={"devicon-html5-plain"} tech="html" toggleFilter={toggleFilter} />
               <TechIcon icon={"devicon-javascript-plain"} tech="javascript" toggleFilter={toggleFilter} />
