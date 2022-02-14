@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import '../../../styles/main.scss';
 import AnimatedBackground from "../../../assets/videos/animated-background.mp4"
 import SocialIcon from '../../components/SocialIcon';
+import IconScroll from "../../../assets/icons/scroll.svg"
 
 function SectionWelcome(props) {
 
@@ -12,24 +13,28 @@ function SectionWelcome(props) {
         </video>
         <div className="bg-video-container">
           <div className="bg-video-text-container">
-          <h1 className="title text-sz-xxl">
-            <span className='txt-cl-prog-grey'>&#60;</span>
-            <span className='txt-cl-prog-green'>BrunoPatricio</span> 
-            <span className='txt-cl-prog-blue'> role</span>
-            <span className='txt-cl-prog-white'>=</span>
-            <span className='txt-cl-prog-brown'>"FrontEndDeveloper"</span>
-            <span className='txt-cl-prog-grey'> /</span>
-            <span className='txt-cl-prog-grey'>&#62;</span>
-          </h1>
-            
-          <SocialIcon icon={"devicon-github-original"} url="https://github.com/brunopatricio3" />
-          <SocialIcon icon={"devicon-linkedin-plain"} url="https://www.linkedin.com/in/bmpatricio/" />
+            <h1 className="title text-sz-xxl">
+              <span className='txt-cl-prog-grey'>&#60;</span>
+              <span className='txt-cl-prog-green'>BrunoPatricio</span> 
+              <span className='txt-cl-prog-blue'> role</span>
+              <span className='txt-cl-prog-white'>=</span>
+              <span className='txt-cl-prog-brown'>"FrontEndDeveloper"</span>
+              <span className='txt-cl-prog-grey'> /</span>
+              <span className='txt-cl-prog-grey'>&#62;</span>
+            </h1>
+              
+            <SocialIcon icon={"devicon-github-original"} url="https://github.com/brunopatricio3" />
+            <SocialIcon icon={"devicon-linkedin-plain"} url="https://www.linkedin.com/in/bmpatricio/" />
+            <div className='scroll-container'>
+              <div className='scroll' />
+            </div>
 
-          <div className="pagination-wrapper">
-            {props.pagination}
-          </div>
+            {/* <div className="pagination-wrapper">
+              {props.pagination}
+            </div> */}
           </div>
         </div>
+        
       </div>    
   );
 }
