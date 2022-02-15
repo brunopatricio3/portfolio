@@ -22,7 +22,6 @@ function SectionTechnologies(props) {
     setTimeout(() => {
       setHasUpdated(false);
     }, 1);
-    
   }
 
   return (

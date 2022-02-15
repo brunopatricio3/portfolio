@@ -28,7 +28,6 @@ function SectionWelcome(props) {
             <div className='scroll-container'>
               <div className='scroll' />
             </div>
-
             {/* <div className="pagination-wrapper">
               {props.pagination}
             </div> */}

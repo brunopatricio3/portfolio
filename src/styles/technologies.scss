@@ -33,16 +33,13 @@
 	width: 100%;
 	height: 15rem;
 	border: 2px solid $cl-primary;
-	// rebeccapurple;
 	border-radius: 1rem;
 	background-color: $black-high;
 	transition: all .6s ease;
 }
 
 .project-wrapper:hover{
-	// cursor: pointer;
 	transform: scale(1.05);
-	// transform: scale(1.05) rotate(2deg);
 }
 
 .project-info{
