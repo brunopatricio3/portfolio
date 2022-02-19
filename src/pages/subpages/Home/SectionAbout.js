@@ -1,7 +1,9 @@
 import React from 'react';
 import '../../../styles/main.scss';
+import { useTranslation } from 'react-i18next';
 
 function SectionAbout(props) {
+  const { t, i18n } = useTranslation();
 
   return (
     <div className="section-about">
@@ -9,24 +11,23 @@ function SectionAbout(props) {
         <div className="row margin-bottom-md">
           <div className="col-sm">
             <h2 className="main-title">
-              About Me
+              {t('aboutme.title')}
             </h2>
           </div>
         </div>
         <div className="row">
-          <div className="col-sm">
-            <p className="main-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+          <div className="col-sm-4">
+            <p className="main-text"></p>
           </div>
-          <div className="col-sm">
+          <div className="col-sm-8">
             <p className="main-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              {t('aboutme.summary_content_one')}            
             </p>
-          </div>
-          <div className="col-sm">
             <p className="main-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              {t('aboutme.summary_content_two')}            
+            </p>
+            <p className="main-text">
+              {t('aboutme.summary_content_three')}            
             </p>
           </div>
         </div>

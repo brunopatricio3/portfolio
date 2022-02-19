@@ -72,6 +72,8 @@ h2,h3,h4,h5,h6,p,span{
 
 .section-about {
   background-color: $black-high;
+  height: 100vh;
+  width: 100vw;
   padding-top: 6rem;
 
   .main-title{

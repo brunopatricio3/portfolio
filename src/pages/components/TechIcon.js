@@ -4,7 +4,7 @@ import '../../styles/technologies.scss';
 function TechIcon(props) {
 
   const [isSelected, setSelected] = useState(false);
-  
+
   useEffect(() => {
     if(props.isSmall && props.selectedTechList && props.selectedTechList.length > 0){
       if(props.selectedTechList.includes(props.tech)){
@@ -15,7 +15,7 @@ function TechIcon(props) {
 
   function pressButton(tech){
     if(!props.isSmall) {
-      setSelected(!isSelected);
+      setSelected(!isSelected); 
       props.toggleFilter(tech);
     }
   }

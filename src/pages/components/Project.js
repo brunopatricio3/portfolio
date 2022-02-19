@@ -3,7 +3,7 @@ import '../../styles/technologies.scss';
 import TechIcon from "../components/TechIcon";
 
 function Project(props) {
-
+	
 	function checkFilters(){
 		if(props.selectedTechList.length === 0 ){
 			return false;
@@ -39,7 +39,7 @@ function Project(props) {
 		}
 	}
 
-  return (
+  	return (
 		<div className={`col-sm-4 ${checkFilters() ? "display-none" : ""}`}>
 			<div className="project-wrapper margin-bottom-md">
 				<div className="project-info">
@@ -50,7 +50,7 @@ function Project(props) {
 				</div>
 			</div>
 		</div>
-  );
+  	);
 }
 
 export default Project;

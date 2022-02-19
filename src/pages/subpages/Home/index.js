@@ -31,16 +31,11 @@ function Home() {
 
   return (
     <>
-      <ReactPageScroller
-        pageOnChange={handlePageChange}
-        customPageNumber={currentPage}
-      >     
-        <SectionWelcome  />  
-        <SectionAbout pagination={getPagesNumbers()} />  
-        <SectionTechnologies />  
-      </ReactPageScroller>
+      <SectionWelcome  />  
+      <SectionAbout pagination={getPagesNumbers()} />  
+      <SectionTechnologies />  
     </>
-  );
+);
 }
 
 export default Home;
