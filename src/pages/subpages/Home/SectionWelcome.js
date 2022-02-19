@@ -7,7 +7,7 @@ import IconScroll from "../../../assets/icons/scroll.svg"
 function SectionWelcome(props) {
 
   return (
-      <div className="section-welcome">
+      <div id="welcome" className="section-welcome">
         <video className="bg-video" autoPlay loop muted>
             <source src={AnimatedBackground} type='video/mp4' />
         </video>
@@ -28,12 +28,8 @@ function SectionWelcome(props) {
             <div className='scroll-container'>
               <div className='scroll' />
             </div>
-            {/* <div className="pagination-wrapper">
-              {props.pagination}
-            </div> */}
           </div>
         </div>
-        
       </div>    
   );
 }

@@ -7,33 +7,12 @@ import SectionTechnologies from './SectionTechnologies';
 import Pagination from "./Pagination";
 
 function Home() {
-
-  const [currentPage, setCurrentPage] = useState(null);
-  const pageNames = ["Welcome", "About me", "Projects"];
-
-  function handlePageChange (number){
-    setCurrentPage(number);
-  };
-
-  function getPagesNumbers(){
-    const pageNumbers = [];
-
-    for (let i = 0; i < 3; i++) {
-      pageNumbers.push(
-        <Pagination key={i} eventKey={i - 1} onSelect={() => handlePageChange(i)} pageName={pageNames[i]}></Pagination>,
-      );
-    }
-
-    return [...pageNumbers];
-  };
-
-  // const pagesNumbers = getPagesNumbers();
-
   return (
     <>
-      <SectionWelcome  />  
-      <SectionAbout pagination={getPagesNumbers()} />  
+      <SectionWelcome />  
+      <SectionAbout />  
       <SectionTechnologies />  
+      <Pagination />
     </>
 );
 }

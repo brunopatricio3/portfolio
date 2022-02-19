@@ -25,7 +25,7 @@ function SectionTechnologies(props) {
   }
 
   return (
-    <div className="section-technologies">
+    <div id="projects" className="section-technologies">
       <div className=" container">
         <div className="row margin-bottom-md">
           <div className="col-sm">

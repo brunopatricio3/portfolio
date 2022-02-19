@@ -6,7 +6,7 @@ function SectionAbout(props) {
   const { t, i18n } = useTranslation();
 
   return (
-    <div className="section-about">
+    <div id="aboutme" className="section-about">
       <div className=" container">
         <div className="row margin-bottom-md">
           <div className="col-sm">
@@ -31,9 +31,6 @@ function SectionAbout(props) {
             </p>
           </div>
         </div>
-        {/* <div className="pagination-wrapper">
-          {props.pagination}
-        </div> */}
       </div>  
     </div>  
   );
