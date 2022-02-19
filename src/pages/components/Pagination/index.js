@@ -1,6 +1,5 @@
 import React from 'react';
 import '../../../styles/main.scss';
-import Page from './Page';
 
 function Pagination() {
   const pages = [
@@ -27,7 +26,10 @@ function Pagination() {
 
     for (let i = 0; i < 3; i++) {
       pageNumbers.push(
-        <Page key={i} onSelect={() => handlePageChange(pages[i].pageid)} pageName={pages[i].pageName} />,
+        <div className="d-flex flex-row-reverse">
+          <div className="pagination-icon" onClick={() => handlePageChange(pages[i].pageid)} />
+          <span className='pagination-text mx-3'>{pages[i].pageName}</span>
+        </div>
       );
     }
 

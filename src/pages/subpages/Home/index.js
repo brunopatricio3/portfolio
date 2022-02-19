@@ -4,7 +4,7 @@ import ReactPageScroller from 'react-page-scroller';
 import SectionWelcome from './SectionWelcome';
 import SectionAbout from './SectionAbout';
 import SectionTechnologies from './SectionTechnologies';
-import Pagination from "./Pagination";
+import Pagination from "../../components/Pagination";
 
 function Home() {
   return (

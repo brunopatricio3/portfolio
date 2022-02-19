@@ -108,40 +108,41 @@ h2,h3,h4,h5,h6,p,span{
 }
 
 .pagination-container{
-  z-index: 1;
   display: block;
   position: fixed;
+  margin-right: 3rem;
   top: 50%;
   right: 0;
-  margin-right: 3rem;
   transition: 0.5s ease-in-out;
-
-  :hover{
-    cursor: pointer;
-    background: $cl-secundary;
-    transform:rotate(-135deg);
-
-    .page{
-      color: white;
-      opacity: 1;
-    }
-  }  
-
-  .page{
-    color: red;
-    opacity: 0;
-  }
+  z-index: 1;
 }
 
-.pagination{
+.pagination-icon{
   background: #000;
   border: 2px solid $cl-primary;
   height: 1.75rem;
   width: 1.75rem;
-  text-align: center;
+  text-align: right;
   transform:rotate(45deg);
   transition: 0.3s ease-in-out;
   margin-bottom: 1.75rem;
+}
+
+.pagination-text{
+  cursor: default;
+  transition: 0.3s ease-in-out;
+  opacity: 0;
+  user-select: none;
+}
+
+.pagination-icon:hover{
+  transform:rotate(-135deg);
+  cursor: pointer;
+  background: $cl-secundary;
+}
+
+.pagination-icon:hover + .pagination-text{
+  opacity: 1;
 }
 
 .technology-icon{
