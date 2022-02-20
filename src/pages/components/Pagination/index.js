@@ -28,7 +28,7 @@ function Pagination() {
       pageNumbers.push(
         <div className="d-flex flex-row-reverse">
           <div className="pagination-icon" onClick={() => handlePageChange(pages[i].pageid)} />
-          <span className='pagination-text mx-3'>{pages[i].pageName}</span>
+          <span className='pagination-text mx-1'>{pages[i].pageName}</span>
         </div>
       );
     }
