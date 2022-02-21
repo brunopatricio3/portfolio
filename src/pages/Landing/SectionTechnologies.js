@@ -1,8 +1,8 @@
-import React, {useEffect, useState} from 'react';
-import '../../../styles/main.scss';
+import React, {useState} from 'react';
+import '../../styles/main.scss';
 import TechIcon from '../../components/TechIcon';
-import Project from '../../components/Project';
-import projectsList from '../../../assets/copy/projects.json';
+import ProjectCard from '../../components/ProjectCard';
+import projectsList from '../../assets/copy/projects.json';
 
 function SectionTechnologies(props) {
 
@@ -51,7 +51,7 @@ function SectionTechnologies(props) {
         </div>
         <div className="row">
           {!hasUpdated && projectsList.map((proj, i) => (
-            <Project 
+            <ProjectCard 
               key={i+"-"+ proj} 
               projectName={proj.projectName} 
               projectDuration={proj.projectDuration}

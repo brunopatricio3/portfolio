@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../styles/main.scss';
+import '../../styles/main.scss';
 import { useTranslation } from 'react-i18next';
 
 function SectionAbout(props) {

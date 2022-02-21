@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
-import '../../../styles/main.scss';
-import AnimatedBackground from "../../../assets/videos/animated-background.mp4"
+import React from 'react';
+import '../../styles/main.scss';
+import AnimatedBackground from "../../assets/videos/animated-background.mp4"
 import SocialIcon from '../../components/SocialIcon';
-import IconScroll from "../../../assets/icons/scroll.svg"
 
 function SectionWelcome(props) {
 

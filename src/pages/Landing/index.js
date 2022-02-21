@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
-import '../../../styles/main.scss';
-import ReactPageScroller from 'react-page-scroller';
+import React from 'react';
+import '../../styles/main.scss';
 import SectionWelcome from './SectionWelcome';
 import SectionAbout from './SectionAbout';
 import SectionTechnologies from './SectionTechnologies';

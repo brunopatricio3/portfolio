@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import '../../styles/technologies.scss';
-import TechIcon from "../components/TechIcon";
+import TechIcon from "../TechIcon";
 
-function Project(props) {
+function ProjectCard(props) {
 	
 	function checkFilters(){
 		if(props.selectedTechList.length === 0 ){
@@ -53,5 +53,5 @@ function Project(props) {
   	);
 }
 
-export default Project;
+export default ProjectCard;
 

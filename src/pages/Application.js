@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
-import Home from './subpages/Home'
+import React from 'react';
+import Landing from './Landing'
 import '../styles/main.scss';
 
 function Application() {
 
   return (
 		<div className="app-wrapper">
-			<Home /> 
+			<Landing /> 
     </div>
   );
 }

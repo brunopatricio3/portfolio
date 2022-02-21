@@ -1,19 +1,23 @@
 import React from 'react';
-import '../../../styles/main.scss';
+import '../../styles/main.scss';
+import { useTranslation } from 'react-i18next';
 
 function Pagination() {
+
+  const { t, i18n } = useTranslation();
+
   const pages = [
     {
       pageid: "welcome", 
-      pageName: "Welcome"
+      pageName: t('pagination.welcome')
     },
     {
       pageid: "aboutme", 
-      pageName: "About me"
+      pageName: t('pagination.aboutme')
     },
     {
       pageid: "projects", 
-      pageName: "Projects"
+      pageName: t('pagination.projects')
     }
   ];
 
