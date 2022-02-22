@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import '../../styles/technologies.scss';
-import TechIcon from "../TechIcon";
+import ProjectTechIcon from "../ProjectTechIcon";
 
 function ProjectCard(props) {
 	
@@ -26,15 +26,15 @@ function ProjectCard(props) {
   
 	function renderTechnology(tech, i){
 		switch(tech){
-			case "bootstrap": return <TechIcon key={i} icon={"devicon-bootstrap-plain"} tech="bootstrap" isSmall selectedTechList={props.selectedTechList} />;
-			case "css": return <TechIcon key={i} icon={"devicon-css3-plain"} tech="css" isSmall selectedTechList={props.selectedTechList} />;
-			case "html": return <TechIcon key={i} icon={"devicon-html5-plain"} tech="html" isSmall selectedTechList={props.selectedTechList} />;
-			case "javascript": return <TechIcon key={i} icon={"devicon-javascript-plain"} tech="javascript" isSmall selectedTechList={props.selectedTechList} />;
-			case "jquery": return <TechIcon key={i} icon={"devicon-jquery-plain"} tech="jquery" isSmall selectedTechList={props.selectedTechList} />;
-			case "react": return <TechIcon key={i} icon={"devicon-react-original"} tech="react" isSmall selectedTechList={props.selectedTechList} />;
-			case "sass": return <TechIcon key={i} icon={"devicon-sass-original"} tech="sass" isSmall selectedTechList={props.selectedTechList} />;
-			case "sourcetree": return <TechIcon key={i} icon={"devicon-sourcetree-original"} tech="sourcetree" isSmall selectedTechList={props.selectedTechList} />;
-			case "typescript": return <TechIcon key={i} icon={"devicon-typescript-original"} tech="typescript" isSmall selectedTechList={props.selectedTechList} />;
+			case "bootstrap": return <ProjectTechIcon key={i} icon={"devicon-bootstrap-plain"} tech="bootstrap" isSmall selectedTechList={props.selectedTechList} />;
+			case "css": return <ProjectTechIcon key={i} icon={"devicon-css3-plain"} tech="css" isSmall selectedTechList={props.selectedTechList} />;
+			case "html": return <ProjectTechIcon key={i} icon={"devicon-html5-plain"} tech="html" isSmall selectedTechList={props.selectedTechList} />;
+			case "javascript": return <ProjectTechIcon key={i} icon={"devicon-javascript-plain"} tech="javascript" isSmall selectedTechList={props.selectedTechList} />;
+			case "jquery": return <ProjectTechIcon key={i} icon={"devicon-jquery-plain"} tech="jquery" isSmall selectedTechList={props.selectedTechList} />;
+			case "react": return <ProjectTechIcon key={i} icon={"devicon-react-original"} tech="react" isSmall selectedTechList={props.selectedTechList} />;
+			case "sass": return <ProjectTechIcon key={i} icon={"devicon-sass-original"} tech="sass" isSmall selectedTechList={props.selectedTechList} />;
+			case "sourcetree": return <ProjectTechIcon key={i} icon={"devicon-sourcetree-original"} tech="sourcetree" isSmall selectedTechList={props.selectedTechList} />;
+			case "typescript": return <ProjectTechIcon key={i} icon={"devicon-typescript-original"} tech="typescript" isSmall selectedTechList={props.selectedTechList} />;
 			default: return;
 		}
 	}

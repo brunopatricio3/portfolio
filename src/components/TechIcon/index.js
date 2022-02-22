@@ -5,14 +5,6 @@ function TechIcon(props) {
 
   const [isSelected, setSelected] = useState(false);
 
-  useEffect(() => {
-    if(props.isSmall && props.selectedTechList && props.selectedTechList.length > 0){
-      if(props.selectedTechList.includes(props.tech)){
-        setSelected(true);
-      }
-    }
-  },[isSelected])
-
   function pressButton(tech){
     if(!props.isSmall) {
       setSelected(!isSelected); 
@@ -21,8 +13,8 @@ function TechIcon(props) {
   }
 
   return (
-    <div className={`tech-wrapper${props.isSmall ? "-sm" : "" }`} onClick={() => pressButton(props.tech)}> 
-      <i className={`${props.icon} tech-icon${props.isSmall ? "-sm" : "" } ${isSelected ? "colored" : ""}`} ></i>
+    <div className={`tech-wrapper`} onClick={() => pressButton(props.tech)}> 
+      <i className={`${props.icon} tech-icon ${isSelected ? "colored" : ""}`} ></i>
     </div>
   );
 }
