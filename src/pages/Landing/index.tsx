@@ -13,7 +13,7 @@ function Home() {
       <SectionTechnologies />  
       <Pagination />
     </>
-);
+  );
 }
 
-export default Home;
+export default Home;  

@@ -1,9 +1,9 @@
 import React from 'react';
 import '../../styles/social.scss';
 
-function SocialIcon(props) {
+function SocialIcon(props: { url: string; icon: string; }) {
   
-  function pressButton(url){
+  function pressButton(url: string | URL){
     window.open(url , '_blank');
   }
 

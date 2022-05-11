@@ -5,11 +5,10 @@
 	margin: 15px;
 	transition: all .3s ease-in-out;
 
-}
-
-.tech-wrapper:hover{
-	cursor: pointer;
-	transform: translateY(-6px);
+	&:hover {
+		cursor: pointer;
+		transform: translateY(-6px);
+	}
 }
 
 .tech-icon{
@@ -36,10 +35,10 @@
 	border-radius: 1rem;
 	background-color: $black-high;
 	transition: all .6s ease;
-}
 
-.project-wrapper:hover{
-	transform: scale(1.05);
+	&:hover {
+		transform: scale(1.05);
+	}
 }
 
 .project-info{

@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import '../../styles/technologies.scss';
 import ProjectTechIcon from "../ProjectTechIcon";
 
-function ProjectCard(props) {
+function ProjectCard(props: { selectedTechList: string[]; projectTechnologies: string[]; projectName: string; projectDuration: string }) {
 	
 	function checkFilters(){
 		if(props.selectedTechList.length === 0 ){
@@ -24,7 +24,7 @@ function ProjectCard(props) {
 		}
 	}
   
-	function renderTechnology(tech, i){
+	function renderTechnology(tech: string, i: React.Key){
 		switch(tech){
 			case "bootstrap": return <ProjectTechIcon key={i} icon={"devicon-bootstrap-plain"} tech="bootstrap" isSmall selectedTechList={props.selectedTechList} />;
 			case "css": return <ProjectTechIcon key={i} icon={"devicon-css3-plain"} tech="css" isSmall selectedTechList={props.selectedTechList} />;
@@ -44,7 +44,7 @@ function ProjectCard(props) {
 			<div className="project-wrapper margin-bottom-md">
 				<div className="project-info">
 				<p><span>{props.projectName} | </span> <span>{props.projectDuration}</span></p>
-					{props.projectTechnologies.map((tech, i) =>
+					{props.projectTechnologies.map((tech: string, i: number) =>
 						renderTechnology(tech, i)
 					)}
 				</div>

@@ -1,7 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import '../../styles/technologies.scss';
 
-function ProjectTechIcon(props) {
+interface ProjectTechIconProps{
+  isSmall: boolean,
+  selectedTechList: string[],
+  tech: string,
+  icon: string,
+}
+
+function ProjectTechIcon(props: ProjectTechIconProps) {
 
   const [isSelected, setSelected] = useState(false);
 

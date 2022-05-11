@@ -3,6 +3,11 @@
 	margin: 15px;
 	transition: all .3s ease-in-out;
 	
+	&:hover{
+		cursor: pointer;
+		transform: translateY(-6px);
+	}
+
 	@keyframes fadein {
 		from {
 			opacity:0;
@@ -11,11 +16,6 @@
 			opacity:1;
 		}
 	}
-}
-
-.social-wrapper:hover{
-	cursor: pointer;
-	transform: translateY(-6px);
 }
 
 .social-icon{

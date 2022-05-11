@@ -2,7 +2,7 @@ import React from 'react';
 import '../../styles/main.scss';
 import { useTranslation } from 'react-i18next';
 
-function SectionAbout(props) {
+function SectionAbout() {
   const { t, i18n } = useTranslation();
 
   return (
@@ -11,7 +11,7 @@ function SectionAbout(props) {
         <div className="row margin-bottom-md">
           <div className="col-sm">
             <h2 className="main-title">
-              {t('aboutme.title')}
+              {t<string>('aboutme.title')}
             </h2>
           </div>
         </div>
@@ -21,13 +21,13 @@ function SectionAbout(props) {
           </div>
           <div className="col-sm-8">
             <p className="main-text">
-              {t('aboutme.summary_content_one')}            
+              {t<string>('aboutme.summary_content_one')}            
             </p>
             <p className="main-text">
-              {t('aboutme.summary_content_two')}            
+              {t<string>('aboutme.summary_content_two')}            
             </p>
             <p className="main-text">
-              {t('aboutme.summary_content_three')}            
+              {t<string>('aboutme.summary_content_three')}            
             </p>
           </div>
         </div>

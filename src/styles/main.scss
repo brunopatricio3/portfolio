@@ -126,6 +126,17 @@ h2,h3,h4,h5,h6,p,span{
   transform:rotate(45deg);
   transition: 0.3s ease-in-out;
   margin-bottom: 1.75rem;
+
+  &:hover {
+    transform:rotate(-135deg);
+    cursor: pointer;
+    background: $cl-secundary;
+  }
+
+  &:hover + .pagination-text {
+    opacity: 1;
+  transform: translateX(-10px);
+  }
 }
 
 .pagination-text{
@@ -135,19 +146,16 @@ h2,h3,h4,h5,h6,p,span{
   user-select: none;
 }
 
-.pagination-icon:hover{
-  transform:rotate(-135deg);
-  cursor: pointer;
-  background: $cl-secundary;
-}
-
-.pagination-icon:hover + .pagination-text{
-  opacity: 1;
-  transform: translateX(-10px);
-}
-
 .technology-icon{
   font-size: 36px;
+}
+
+.welcome-name {
+  cursor: pointer;
+
+  &:hover{
+       opacity: 0.75;
+  }
 }
 
 .scroll {

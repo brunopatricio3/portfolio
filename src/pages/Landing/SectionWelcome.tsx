@@ -1,9 +1,9 @@
 import React from 'react';
 import '../../styles/main.scss';
-import AnimatedBackground from "../../assets/videos/animated-background.mp4"
+import AnimatedBackground from "../../assets/videos/animated-background.mp4";
 import SocialIcon from '../../components/SocialIcon';
 
-function SectionWelcome(props) {
+function SectionWelcome() {
 
   return (
       <div id="welcome" className="section-welcome">
@@ -14,7 +14,7 @@ function SectionWelcome(props) {
           <div className="bg-video-text-container">
             <h1 className="title text-sz-xxl">
               <span className='txt-cl-prog-grey'>&#60;</span>
-              <span className='txt-cl-prog-green'>BrunoPatricio</span> 
+              <span className='txt-cl-prog-green welcome-name'>BrunoPatricio</span> 
               <span className='txt-cl-prog-blue'> role</span>
               <span className='txt-cl-prog-white'>=</span>
               <span className='txt-cl-prog-brown'>"FrontEndDeveloper"</span>
