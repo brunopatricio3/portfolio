@@ -5,6 +5,10 @@ import SocialIcon from '../../components/SocialIcon';
 
 function SectionWelcome() {
 
+  function handlePageChange (pageId){
+    document.getElementById(pageId).scrollIntoView();
+  };
+
   return (
       <div id="welcome" className="section-welcome">
         <video className="bg-video" autoPlay loop muted>
@@ -14,7 +18,7 @@ function SectionWelcome() {
           <div className="bg-video-text-container">
             <h1 className="title text-sz-xxl">
               <span className='txt-cl-prog-grey'>&#60;</span>
-              <span className='txt-cl-prog-green welcome-name'>BrunoPatricio</span> 
+              <span className='txt-cl-prog-green welcome-name' onClick={() => handlePageChange("aboutme")}>BrunoPatricio</span> 
               <span className='txt-cl-prog-blue'> role</span>
               <span className='txt-cl-prog-white'>=</span>
               <span className='txt-cl-prog-brown'>"FrontEndDeveloper"</span>
@@ -24,9 +28,9 @@ function SectionWelcome() {
               
             <SocialIcon icon={"devicon-github-original"} url="https://github.com/brunopatricio3" />
             <SocialIcon icon={"devicon-linkedin-plain"} url="https://www.linkedin.com/in/bmpatricio/" />
-            <div className='scroll-container'>
+            {/* <div className='scroll-container'>
               <div className='scroll' />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>    

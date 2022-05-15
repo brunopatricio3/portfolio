@@ -1,13 +1,14 @@
 import React from 'react';
 import '../../styles/main.scss';
 import { useTranslation } from 'react-i18next';
+import ProfilePicture from "../../assets/images/profile.png";
 
 function SectionAbout() {
   const { t, i18n } = useTranslation();
 
   return (
     <div id="aboutme" className="section-about">
-      <div className=" container">
+      <div className="container">
         <div className="row margin-bottom-md">
           <div className="col-sm">
             <h2 className="main-title">
@@ -16,8 +17,8 @@ function SectionAbout() {
           </div>
         </div>
         <div className="row">
-          <div className="col-sm-4">
-            <p className="main-text"></p>
+          <div className="col-sm-4 text-center">
+            <img className='picture' src={ProfilePicture} />
           </div>
           <div className="col-sm-8">
             <p className="main-text">
