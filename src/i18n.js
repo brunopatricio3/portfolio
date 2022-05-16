@@ -13,14 +13,15 @@ const resources = {
 			frontend: "FrontEndDeveloper",
 		},
 		"aboutme":{
-		title: "About me",
-		summary_title: "Summary",
-		summary_content_one: "Hello there! I'm Bruno Patrício, a Front-End developer! I've started my professional career back in April 2018. During this time I've been able to focus on several front-end technologies and work environments.",
+			title: "About me",
+			summary_title: "Summary",
+			summary_content_one: "Hello there! I'm Bruno Patrício, a Front-End developer! I've started my professional career back in April 2018. During this time I've been able to focus on several front-end technologies and work environments.",
 			summary_content_two: "On a daily basis, I'm responsible for either maintaining or developing brand-new features for web or mobile applications. I also help with the refinement process of features' user stories, estimation of their work load and how much time it would take for the team to tackle them",
 			summary_content_three: "My experience is also noteworthy when it comes to working with international projects and teams. I've worked some months on-site on a project in the Netherlands and remotely on another two international projects, so I'm comfortable working together with a multidisciplinary and culture diverse team and feel at ease working in English."
 		},
 		"projects":{
-			title: "Projects"
+			title: "Projects",
+			description: "Below you can find a list of projects I've worked on for the past years, although no specific details regarding the clients can be made public, I describe what my role within the project was, which technologies were used and some key features I either fully integrated or helped the team integrate."
 		},
 		"pagination":{
 			welcome: "Welcome",

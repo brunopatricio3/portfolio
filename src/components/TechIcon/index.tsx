@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import '../../styles/technologies.scss';
 
-function TechIcon(props: { isSmall: boolean; toggleFilter: (arg0: string) => void; tech: string; icon: string; }) {
+function TechIcon(props: { isSmall: boolean; toggleFilter: (arg0: string) => void; tech: string; properTechName: string; icon: string; }) {
 
   const [isSelected, setSelected] = useState(false);
 
@@ -13,8 +13,8 @@ function TechIcon(props: { isSmall: boolean; toggleFilter: (arg0: string) => voi
   }
 
   return (
-    <div className={`tech-wrapper`} onClick={() => pressButton(props.tech)}> 
-      <i className={`${props.icon} tech-icon ${isSelected ? "colored" : ""}`} ></i>
+    <div title={props.properTechName} className={`tech-wrapper`} onClick={() => pressButton(props.tech)}> 
+      <i  className={`${props.icon} tech-icon ${isSelected ? "colored" : ""}`} ></i>
     </div>
   );
 }

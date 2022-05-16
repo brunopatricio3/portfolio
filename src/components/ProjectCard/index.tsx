@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import '../../styles/technologies.scss';
 import ProjectTechIcon from "../ProjectTechIcon";
 
-function ProjectCard(props: { selectedTechList: string[]; projectTechnologies: string[]; projectName: string; projectDuration: string }) {
+function ProjectCard(props: { selectedTechList: string[]; projectTechnologies: string[]; projectName: string; projectDuration: string, openModal:any }) {
 	
 	function checkFilters(){
 		if(props.selectedTechList.length === 0 ){
@@ -40,7 +40,7 @@ function ProjectCard(props: { selectedTechList: string[]; projectTechnologies: s
 	}
 
   	return (
-		<div className={`col-sm-4 ${checkFilters() ? "display-none" : ""}`}>
+		<div className={`col-sm-4 ${checkFilters() ? "display-none" : ""}`} onClick={props.openModal}>
 			<div className="project-wrapper margin-bottom-md">
 				<div className="project-info">
 				<p><span>{props.projectName} | </span> <span>{props.projectDuration}</span></p>
