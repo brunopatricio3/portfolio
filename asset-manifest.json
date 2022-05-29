@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/brunopatricio3/portfolio/static/css/main.d7a51fe0.css",
+    "main.js": "/brunopatricio3/portfolio/static/js/main.47640842.js",
+    "static/media/animated-background.mp4": "/brunopatricio3/portfolio/static/media/animated-background.84438f288c51701bfe83.mp4",
+    "index.html": "/brunopatricio3/portfolio/index.html",
+    "main.d7a51fe0.css.map": "/brunopatricio3/portfolio/static/css/main.d7a51fe0.css.map",
+    "main.47640842.js.map": "/brunopatricio3/portfolio/static/js/main.47640842.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d7a51fe0.css",
+    "static/js/main.47640842.js"
+  ]
+}
